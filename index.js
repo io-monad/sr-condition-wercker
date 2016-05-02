@@ -6,14 +6,14 @@ module.exports = function (pluginConfig, config, cb) {
 
   if (env.WERCKER !== "true") {
     return cb(new SRError(
-      "ENOWERCKER: semantic-release didn’t run on wercker and therefore a new version won’t be published.",
+      "ENOWERCKER semantic-release didn’t run on wercker and therefore a new version won’t be published.",
       "ENOWERCKER"
     ));
   }
 
   if (env.WERCKER_GIT_BRANCH !== options.branch) {
     return cb(new SRError(
-      "EBRANCHMISMATCH: This test run was triggered on the branch " + env.WERCKER_GIT_BRANCH +
+      "EBRANCHMISMATCH This test run was triggered on the branch " + env.WERCKER_GIT_BRANCH +
       ", while semantic-release is configured to only publish from " + options.branch + ".",
       "EBRANCHMISMATCH"
     ));
@@ -22,7 +22,7 @@ module.exports = function (pluginConfig, config, cb) {
   // WERCKER_RESULT is set only for after-steps
   if (env.hasOwnProperty("WERCKER_RESULT") && env.WERCKER_RESULT !== "passed") {
     return cb(new SRError(
-      "EFAILED: This test run was not passed and therefore a new version won’t be published.",
+      "EFAILED This test run was not passed and therefore a new version won’t be published.",
       "EFAILED"
     ));
   }
