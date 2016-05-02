@@ -1,5 +1,7 @@
 # sr-condition-wercker
 
+[![wercker status](https://app.wercker.com/status/8ced5e4b55dde3ec837fb522c2634167/s/master "wercker status")](https://app.wercker.com/project/bykey/8ced5e4b55dde3ec837fb522c2634167) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 [semantic-release](https://github.com/semantic-release/semantic-release) verifyConditions plugin for wercker
 
 ## Usage
