@@ -1,7 +1,7 @@
 {
   "name": "sr-condition-wercker",
-  "description": "semantic-release verifyConditions plugin for wercker",
   "version": "0.0.0-placeholder",
+  "description": "semantic-release verifyConditions plugin for wercker",
   "keywords": [
     "semantic-release",
     "wercker"
@@ -21,19 +21,25 @@
     "url": "https://github.com/io-monad/sr-condition-wercker.git"
   },
   "scripts": {
-    "test": "mocha",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "test": "mocha"
   },
-  "release": {
-    "verifyConditions": "./"
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "dependencies": {
     "@semantic-release/error": "^1.0.0"
   },
   "devDependencies": {
+    "cz-conventional-changelog": "^1.1.6",
     "intelli-espower-loader": "^1.0.1",
     "mocha": "^2.4.5",
     "power-assert": "^1.3.1",
     "semantic-release": "^4.3.5"
+  },
+  "release": {
+    "verifyConditions": "./"
   }
 }
