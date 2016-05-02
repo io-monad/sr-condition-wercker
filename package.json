@@ -1,6 +1,7 @@
 {
   "name": "sr-condition-wercker",
   "description": "semantic-release verifyConditions plugin for wercker",
+  "version": "0.0.0-placeholder",
   "keywords": [
     "semantic-release",
     "wercker"
