@@ -1,0 +1,38 @@
+{
+  "name": "sr-condition-wercker",
+  "description": "semantic-release verifyConditions plugin for wercker",
+  "keywords": [
+    "semantic-release",
+    "wercker"
+  ],
+  "homepage": "https://github.com/io-monad/sr-condition-wercker#readme",
+  "bugs": {
+    "url": "https://github.com/io-monad/sr-condition-wercker/issues"
+  },
+  "license": "MIT",
+  "author": "IRIDE Monad <iride.monad@gmail.com>",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/io-monad/sr-condition-wercker.git"
+  },
+  "scripts": {
+    "test": "mocha",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "release": {
+    "verifyConditions": "./"
+  },
+  "dependencies": {
+    "@semantic-release/error": "^1.0.0"
+  },
+  "devDependencies": {
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^2.4.5",
+    "power-assert": "^1.3.1",
+    "semantic-release": "^4.3.5"
+  }
+}
